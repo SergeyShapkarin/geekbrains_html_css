@@ -1,34 +1,91 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Online shop</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>SubWay Shop</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-   <header>
-       <h1 align="center">Добро пожаловать в Online Shop</h1>
-       <hr>
-   </header>
-    <p>Вы находитесь на главной странице интернет магазина Online Shop. Мы предлагаем большой выбор материалов и переферийного оборудования для вашего любимого компьютера. У нас всегда самые низкие цены.<br></p>
-    <br>Выберите интересующий вас раздел:<br>
-    <nav>
-    <ul>
-      <li><a href="index.html"><b>Главная</b></a></li>
-        <li><a href="catalog.html"><b>Каталог</b></a>
-         <ul>
-            <li><a href="catalog/graphicscards/Asus%20GTX1050.html">Asus GTX1050</a></li>
-            <li><a href="catalog/graphicscards/Gigabite%20GTX1050Ti.html">Gigabite GTX1050Ti</a></li>
-            <li><a href="catalog/graphicscards/Gigabite%20GTX1050.html">Gigabite GTX1050</a></li>
-            <li><a href="catalog/graphicscards/Palit%20GTX1050Ti.html">Palit GTX1050Ti</a></li>
+  <header class="header">
+    <div class="container">
+      <div class="title">
+        <h2>Добро пожаловать в интернет магазин SubWay Shop</h2>
+      </div>
+      <div class="logo">
+        <div class="logoimg">
+          <img src="./source/logo.png" alt="logo">
+        </div>
+        <div class="navigator">
+          <ul class="menu">
+            <li class="item_main">
+              <a href="./index.html">главная</a>
+            </li>
+            <li class="item_catalog">
+              <a href="./catalog.html">каталог</a>
+              <ul class="sub_menu">
+                <li>
+                  <a href="./catalog/graphicscards/AsusGTX1050TI_Cerberus.html">Asus GTX 1050TI Cerberus</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusGTX1050_Phoenix.html">Asus GTX 1050TI Phoenix</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusRTX2060DualEvo.html">Asus RTX 2060 DualEvo</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusRTX2080TI_Dual.html">Asus RTX 2080TI Dual</a>
+                </li>
+              </ul>
+            </li>
+            <li class="item_contacts">
+              <a href="./contacts.html">контакты</a>
+            </li>
           </ul>
-        </li>
-        <li><a href="contacts.html"><b>Контакты</b></a></li>
-    </ul>
-    </nav>
-    <hr>
-    <footer>
-        <p align="center">&copy; Все права защищены</p>
-    </footer>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <div class="container">
+      <h2>Главная страница</h2>
+      <p>Вы находитесь на главной странице интернет магазина Online Shop. Мы предлагаем       большой выбор материалов и переферийного оборудования для вашего любимого             компьютера. У нас всегда самые низкие цены.   
+      </p>
+      <br>
+      <p>Выберите интересующий вас раздел!</p>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="social">
+        <div class="twitter">
+          <a href="#">
+            <img src="source/social/twitter.png">
+          </a>
+        </div>
+        <div class="google">
+          <a href="#">
+            <img src="source/social/google.png">
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="#">
+            <img src="source/social/facebook.png">
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="#">
+            <img src="source/social/linkedin.png">
+          </a>
+        </div>
+      </div>
+      <div class="all_rigths">
+        <h4>&copy; Все права защищены</h4>
+      </div>
+        
+    </div>
+  </footer>
+  
 </body>
 </html>

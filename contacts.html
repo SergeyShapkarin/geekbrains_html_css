@@ -6,55 +6,121 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-       <h1 align="center">Наши контакты</h1>
-       <nav>
-       <ul>
-      <li><a href="index.html"><b>Главная</b></a></li>
-        <li><a href="catalog.html"><b>Каталог</b></a>
-         <ul>
-            <li><a href="catalog/graphicscards/Asus%20GTX1050.html">Asus GTX1050</a></li>
-            <li><a href="catalog/graphicscards/Gigabite%20GTX1050Ti.html">Gigabite GTX1050Ti</a></li>
-            <li><a href="catalog/graphicscards/Gigabite%20GTX1050.html">Gigabite GTX1050</a></li>
-            <li><a href="catalog/graphicscards/Palit%20GTX1050Ti.html">Palit GTX1050Ti</a></li>
+  <header class="header">
+    <div class="container">
+      <div class="title">
+        <h2>Добро пожаловать в интернет магазин SubWay Shop</h2>
+      </div>
+      <div class="logo">
+        <div class="logoimg">
+          <img src="./source/logo.png" alt="logo">
+        </div>
+        <div class="navigator">
+          <ul class="menu">
+            <li class="item_main">
+              <a href="./index.html">главная</a>
+            </li>
+            <li class="item_catalog">
+              <a href="./catalog.html">каталог</a>
+              <ul class="sub_menu">
+                <li>
+                  <a href="./catalog/graphicscards/AsusGTX1050TI_Cerberus.html">Asus GTX 1050TI Cerberus</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusGTX1050_Phoenix.html">Asus GTX 1050TI Phoenix</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusRTX2060DualEvo.html">Asus RTX 2060 DualEvo</a>
+                </li>
+                <li>
+                  <a href="./catalog/graphicscards/AsusRTX2080TI_Dual.html">Asus RTX 2080TI Dual</a>
+                </li>
+              </ul>
+            </li>
+            <li class="item_contacts">
+              <a href="./contacts.html">контакты</a>
+            </li>
           </ul>
-        </li>
-        <li><a href="contacts.html"><b>Контакты</b></a></li>
-    </ul>
-      </nav>
-       <hr>
-   </header>
-   <table>
-   <tr>
-   <td>
-    <p><b>Наш юридический адрес:</b><br>
-        г.Куево-Тутуево, ул. Распутина, д.6 к.66 оф.666<br>
-        тел: (7777) 888 99 00
-    </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h2>Наши контактные адреса:</h2>
+      <div class="address">
+        <div class="juristic">
+          <h3>Юридический адрес:</h3>
+          <p>город Куево-Тутуево</p>
+          <p>улица Распутина</p>
+          <p>дом 6 корпус 7</p>
+          <p>офис 888</p>
+          <p>тел.: (7777) 333 22 11</p>
+        </div>
+        <div class="actual">
+          <h3>Фактический адрес:</h3>
+          <p>город Нур-Султан</p>
+          <p>улица Иманова</p>
+          <p>строение 19</p>
+          <p>офис 606</p>
+          <p>тел.: (7172) 787 787</p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://yandex.kz/map-widget/v1/-/CKQwFQj1" frameborder="1" allowfullscreen="true"></iframe>
+      </div>
+      <div class="feedback">
+        <form>
+          <fieldset>
+            <legend align="center"><b>Обратная связь</b></legend>
+            <label for="name">Введите ваше имя:</label>
+            <input type="text" id="name"><br>
+            <label for="mail">Укажите ваш e-mail:</label>
+            <input type="text" id="mail"><br>
+            <label for="subject">напишите тему сообщения:</label>
+            <input type="text" id="subject"><br>
+            <label for="message" id="label_message">Опишите вашу проблему:</label>
+            <textarea rows = "10" id="message"></textarea><br>
+            <input type = "submit" id="send" value = "Отправить">
+            <input type = "reset" id="reset" value = "Очистить">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
     
-    <p><b>Наш фактический адрес:</b><br>
-        г.Нур-Султан, ул.Иманова, д.19, оф. 806<br>
-        тел: (7777) 888 99 00
-    </p>
-    <iframe src="https://yandex.kz/map-widget/v1/-/CKQwFQj1" width="480" height="400" frameborder="1" allowfullscreen="true"></iframe>
-    </td>
-    <td width="30px"></td>
-    <td>
-       <fieldset>
-        <legend align="center"><b>Обратная связь</b></legend>
-        <input type="text" size = "30" placeholder = "Ваше Имя"><br>
-        <input type="text" size = "30" placeholder = "E-mail"><br>
-        <input type="text" size = "30" placeholder = "Тема"><br>
-        <textarea cols = "38", rows = "10"></textarea><br>
-        <input type = "submit" value = "Отправить">
-        <input type = "reset" value = "Очистить">
-       </fieldset>
-    </td>
-    </tr>
-    </table>
-    <hr>
-    <footer>
-        <p align="center">&copy; Все права защищены</p>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="social">
+        <div class="twitter">
+          <a href="#">
+            <img src="source/social/twitter.png">
+          </a>
+        </div>
+        <div class="google">
+          <a href="#">
+            <img src="source/social/google.png">
+          </a>
+        </div>
+        <div class="facebook">
+          <a href="#">
+            <img src="source/social/facebook.png">
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="#">
+            <img src="source/social/linkedin.png">
+          </a>
+        </div>
+      </div>
+      <div class="all_rigths">
+        <h4>&copy; Все права защищены</h4>
+      </div>
+        
+    </div>
+  </footer>
+
+  
 </body>
 </html>
